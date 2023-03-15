@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Urbina Tatiana">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Portafolio de desarrollo web de Urbina Tatiana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tituto-->
+    <title>Curso de Bootstrap</title>
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="/img/icon.png" >
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Iconos de Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Hoja de estilos CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    </head>
+<body>
+  <!--Barra de Navegación-->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">
+          <img src="img/desarrollo-web-1.png" width="50px" alt="">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonios">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Sección Hero-->
+  <section class="hero align-items-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="imagen-perfil" src="img/foto perfil.jpg" alt="foto perfil">
+      <h1>Hola, soy Urbina Tatiana</h1>
+      <h2>Desarrollador FullStack</h2>
+    </div>
+    <div class="hero-inferior">
+      <img class="hero-inferior-imagen img-fluid" src="img/istockphoto-1241710721-170667a.jpg" alt="imagen desarrollador web">
+    </div>
+  </section>
+  <!--Sobre mí-->
+  <section class="sobre-mi seccion-oscura" id="sobre-mi">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoce a Urbina Tatiana</h2>
+      <p class="seccion-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias accusantium ipsam quibusdam veritatis quae atque officia quas, animi repellat suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, deleniti voluptate? Inventore, minus doloremque? Delectus, numquam incidunt molestiae fugiat culpa minus in? Dolore nobis commodi quidem provident, voluptatem incidunt hic!</p>
+    </div>
+  </section>
+  <!--Experiencia-->
+  <section class="experiencia seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!--Desarrollo Web-->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Desarrollo Web</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rem autem exercitationem ipsa, aliquam soluta?</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">HTML</span>
+            <span class="badge text-bg-primary">CSS</span>
+            <span class="badge text-bg-primary">JavaScript</span>
+          </div>
+        </div>
+        <!--Articulos-->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Artículos</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rem autem exercitationem ipsa, aliquam soluta?</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Escribir</span>
+            <span class="badge text-bg-primary">Editar</span>
+            <span class="badge text-bg-primary">Blogs</span>
+          </div>
+        </div>
+        <!--Estudiante-->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-laptop"></i>
+          <p class="experiencia-titulo">Estudios</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rem autem exercitationem ipsa, aliquam soluta?</p>
+          <div class="badges-contenedor">
+            <span class="badge text-bg-primary">Desarrollo Web</span>
+            <span class="badge text-bg-primary">Python</span>
+            <span class="badge text-bg-primary">FreeCodeCamp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Proyectos-->
+  <section class="proyectos-recientes seccion-clara d-flex flex-column" id="proyectos">
+    <h2 class="seccion-titulo texto-negro">Mis Proyectos recientes</h2>
+    <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente</h3>
+    <!--Galería de Proyectos-->
+    <div class="container text-center proyecto-contenedor">
+      <div class="row">
+        <!--Proyecto 1-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/img-section-profile-share-proyectos-web.jpg" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Proyecto 1</p>
+              <div class="iconos-contenedor">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Proyecto 2-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/img-section-profile-share-proyectos-web.jpg" alt="Proyecto 2">
+            <div class="overlay">
+              <p>Proyecto 2</p>
+              <div class="iconos-contenedor">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Proyecto 3-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/img-section-profile-share-proyectos-web.jpg" alt="Proyecto 3">
+            <div class="overlay">
+              <p>Proyecto 3</p>
+              <div class="iconos-contenedor">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Proyecto 4-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/img-section-profile-share-proyectos-web.jpg" alt="Proyecto 4">
+            <div class="overlay">
+              <p>Proyecto 4</p>
+              <div class="iconos-contenedor">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Proyecto 5-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/img-section-profile-share-proyectos-web.jpg" alt="Proyecto 5">
+            <div class="overlay">
+              <p>Proyecto 5</p>
+              <div class="iconos-contenedor">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Proyecto 6-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="img/img-section-profile-share-proyectos-web.jpg" alt="Proyecto 6">
+            <div class="overlay">
+              <p>Proyecto 6</p>
+              <div class="iconos-contenedor">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-laptop"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" target="_blank" rel="noopener noreferrer">
+      <button type="button" class="btn btn-info">
+        Ver más Proyectos
+        <i class="bi bi-arrow-right-circle-fill"></i>
+      </button>
+    </a>
+  </section>
+  <!--Artículos-->
+  <section class="articulos justify-content-start">
+    <h2 class="seccion-titulo texto-negro">Artículos</h2>
+    <div class="card">
+      <div class="card-header">
+        Más recientes
+      </div>
+      <ul class="list-group list-group-flush">
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            Python Ventajas - como usarlo
+          </li>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            JavaScript Ventajas - como usarlo
+          </li>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <li class="list-group-item">
+            Bootstrap Ventajas - como usarlo
+          </li>
+        </a>
+      </ul>
+    </div>
+    <a href="#" target="_blank" rel="noopener noreferrer">
+    <button type="button" class="btn btn-info">
+      Ver más artículos
+      <i class="bi bi-arrow-right-circle-fill"></i>
+    </button>
+    </a>
+  </section>
+  <!--Testimonios-->
+  <section class="testimonios seccion-clara" id="testimonios">
+    <h2 class="seccion-titulo">Testimonios</h2>
+    <h3 class="seccion-descripcion">Estos son algunos testimonios de mis clientes</h3>
+    <!--Carrusel-->
+    <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/joelle-anne-schmitz-867432_1280.jpg" alt="cliente">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam distinctio alias quam. Saepe, consequuntur dolores facere aut non assumenda suscipit minus corporis veritatis ipsa rerum vel ipsam explicabo molestias!</p>
+            <div class="testimonio-info">
+              <p class="cliente">Billetera Virtual</p>
+              <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/young-man-denim-shirt-smiling-260nw-1546312583.webp" alt="cliente">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam distinctio alias quam. Saepe, consequuntur dolores facere aut non assumenda suscipit minus corporis veritatis ipsa rerum vel ipsam explicabo molestias!</p>
+            <div class="testimonio-info">
+              <p class="cliente">Página Web</p>
+              <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/photo-1547425260-76bcadfb4f2c.jfif" alt="cliente">
+            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam distinctio alias quam. Saepe, consequuntur dolores facere aut non assumenda suscipit minus corporis veritatis ipsa rerum vel ipsam explicabo molestias!</p>
+            <div class="testimonio-info">
+              <p class="cliente">Billetera Virtual</p>
+              <p class="cargo">Gerente de proyectos en Desarrollo Web</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+  <!--Contacto-->
+  <section class="contacto seccion-oscura" id="contacto">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            ¡Hablemos!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            Contáctame para iniciar tu proyecto de Desarrollo Web y haré que tu visión se haga realidad.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:urbinatatiana077@gmail.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="img/desarrollo-web-1.png" alt="logo del portafolio">
+    <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un Proyecto Juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-git"></i>
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="mailto:urbinatatiana077@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+    <div class="derechos-de-autor">Creado por Urbina Tatiana (2023) &#169;</div>
+  </footer>
+  <!-- script JavaScript Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
